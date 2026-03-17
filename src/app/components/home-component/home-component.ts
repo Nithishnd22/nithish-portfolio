@@ -2,10 +2,14 @@ import { Component, HostListener } from '@angular/core';
 import { MatToolbar } from '@angular/material/toolbar';
 import { ExperienceComponent } from '../experience-component/experience-component';
 import { SkillComponent } from '../skill-component/skill-component';
+import { ContactComponent } from '../contact-component/contact-component';
+import { ProjectComponent } from '../project-component/project-component';
 
 @Component({
   selector: 'app-home-component',
-  imports: [MatToolbar, ExperienceComponent, SkillComponent],
+  imports: [MatToolbar, ExperienceComponent, SkillComponent,
+    ContactComponent, ProjectComponent
+  ],
   templateUrl: './home-component.html',
   styleUrl: './home-component.css',
 })
@@ -23,11 +27,8 @@ export class HomeComponent {
     this.activeSection = sectionId;
 
     const element = document.getElementById(sectionId);
-    console.log('element: on scroll section', element);
 
     element?.scrollIntoView({ behavior: 'smooth'});
-
-    // this.activeSection = sectionId;
 
     setTimeout(() => {
       this.isManualScroll = false;
@@ -44,22 +45,15 @@ export class HomeComponent {
     for(let section of sections) {
 
       const element = document.getElementById(section);
-      // console.log('element: ', element);
 
       if(element) {
         const rect = element.getBoundingClientRect();
 
         if (rect.top <= 150 && rect.bottom >= 150) {
           this.activeSection = section;
-          console.log('this.activeSection: ', this.activeSection);
         }
       }
     }
   }
-
-  // ngOnInit() {
-    
-  //   console.log('this.activeSection: ', this.activeSection);
-  // }
 
 }

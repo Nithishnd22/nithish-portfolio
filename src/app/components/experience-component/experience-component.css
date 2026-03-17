@@ -1,0 +1,87 @@
+.experience-section {
+    margin-bottom: 10px;
+}
+
+/* Title */
+.section-title {
+    margin-top: 2px;
+    font-size: 32px;
+    text-align: center;
+    color: #7b2ff7;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    margin-left: 10px;
+    border-left: 2px solid #7b2ff7;
+    
+    animation: text-appears both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 100vh;
+}
+
+@keyframes text-appears {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Each Item */
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 30px;
+}
+
+/* Dot */
+
+.timeline-dot {
+    position: absolute;
+    left: -8.5px;
+    width: 16px;
+    height: 16px;
+    background: #7b2ff7;
+    border-radius: 50%;
+}
+
+/* Content Box */
+.timeline-content {
+    background: white;
+    padding: 20px 25px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* Text Styling */
+
+.timeline-content h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.timeline-content h4 {
+    margin: 5px 0;
+    color: #7b2ff7;
+}
+
+.duration {
+  font-size: 13px;
+  color: #888;
+}
+
+.timeline-content ul {
+  margin-top: 10px;
+  padding-left: 18px;
+}
+
+.timeline-content li {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #555;
+}
