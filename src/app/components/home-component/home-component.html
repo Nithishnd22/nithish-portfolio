@@ -1,0 +1,49 @@
+<div>
+    <mat-toolbar class="navbar" color="primary">
+        <div class="logo">
+            <span>NITHISH KUMAR</span>
+        </div>
+        <span class="spacer"></span>
+        <div class="nav-links">
+            <a mat-button (click)="scrollToSection('about')" [class.active]="activeSection==='about'" >About</a>
+            <a mat-button (click)="scrollToSection('experience')" [class.active]="activeSection==='experience'" >Experience</a>
+            <a mat-button (click)="scrollToSection('skills')" [class.active]="activeSection==='skills'" >Skills</a>
+            <a mat-button (click)="scrollToSection('projects')" [class.active]="activeSection==='projects'" >Projects</a>
+            <a mat-button (click)="scrollToSection('contact')" [class.active]="activeSection==='contact'" >Contact</a>
+        </div>
+
+        <button mat-raised-button class="cv-btn">Download CV</button>
+    </mat-toolbar>
+</div>
+
+<div class="page-container" (scroll)="onScroll()">
+    <section id="about">
+        <div class="about-container">
+        
+            <div class="about-text">
+                <h1>Hello I'M Nithish Kumar</h1>
+        
+                <p class="role">Software Engineer - Full Stack Developer</p>
+        
+                <p class="bio">
+                    I'm a passionate Full Stack Developer with around 3 years of experience
+                    building scalable and high-performance web applications. I specialize in
+                    developing modern web solutions using Angular, Node.js, and PostgreSQL.
+                </p>
+            </div>
+        
+            <div class="about-image">
+                <img src="/Nithish.jpg" alt="Nithish Kumar">
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="experience">
+        <experience-component> </experience-component>
+    </section>
+
+    <section id="skills">
+        <skill-component> </skill-component>
+    </section>
+</div>
