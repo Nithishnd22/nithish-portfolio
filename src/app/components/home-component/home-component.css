@@ -13,10 +13,14 @@ body {
 
 /* Scroll container */
 .page-container {
-  margin-top: 70px;
+  margin-top: 50px;
   height: calc(100vh - 70px);
   overflow-y: auto;
   scroll-behavior: smooth;
+}
+
+.page-container h1 {
+  font-family:monospace;
 }
 
 /* Sections */
