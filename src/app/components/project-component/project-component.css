@@ -1,0 +1,107 @@
+.section-title {
+    margin-top: 2px;
+    font-size: 32px;
+    text-align: center;
+    color: #7b2ff7;
+}
+
+/* Wrapper: Left + Right Layout */
+.project-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 20px;
+}
+
+/* LEFT SIDE */
+.project-content {
+    flex: 1;
+    margin-top: 0;
+}
+
+.project-content h2 {
+    color: #2c3e50;
+    font-weight: 400px;
+}
+
+.project-content p {
+    margin: 6px 0;
+    color: #555;
+}
+
+.project-content h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+/* LIST */
+.project-content ul {
+    padding-left: 20px;
+}
+
+.project-content li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* TECH STACK */
+.chip {
+    display: inline-block;
+    background: #e3f2fd;
+    color: #1976d2;
+    padding: 6px 12px;
+    margin: 5px 6px 0 0;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* RIGHT SIDE IMAGE */
+.project-wrapper .project-image {
+    flex: 1;
+    text-align: center;
+    /* align-items: flex-start; */
+}
+
+.project-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-image img {
+  width: 100%;
+  max-width: 400px;
+  height: 250px;              
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  align-items: flex-start;
+}
+
+/* HOVER EFFECT */
+.project-image img:hover {
+  transform: scale(1.03);
+  transition: 0.3s ease;
+}
+
+/* 📱 RESPONSIVE (Mobile) */
+@media (max-width: 768px) {
+  .project-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-image img {
+    max-width: 100%;
+  }
+}
+
+.project-wrapper.reverse {
+    flex-direction: row-reverse;
+    /* align-items: flex-start; */
+}

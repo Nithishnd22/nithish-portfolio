@@ -1,6 +1,77 @@
-<mat-tab-group>
-    <mat-tab label="ZenBasket">
-        ZenBasket - Ecommerce Project
-    </mat-tab>
-    <mat-tab label="Clarus Subsea Integration">Clarus Subsea Integration</mat-tab>
-</mat-tab-group>
+<section id="projects">
+
+    <h2 class="section-title">MY PROJECTS</h2>
+
+    <mat-tab-group>
+        <mat-tab label="ZenBasket">
+
+            <div class="project-wrapper">
+                <div class="project-content">
+                    <h2> {{ projects[0].title}} </h2>
+
+                    <p><strong>{{ projects[0].role }}</strong> @ {{ projects[0].company }}</p>
+                    <p>{{ projects[0].duration }}</p>
+    
+                    <p>{{ projects[0].description }}</p>
+    
+                    <h3>Key Contributions</h3>
+                    <ul>
+                        <li *ngFor="let item of projects[0].contributions">
+                            {{ item }}
+                        </li>
+                    </ul>
+    
+                    <h3>Tech Stack</h3>
+                    <div>
+                        <span *ngFor="let tech of projects[0].tech" class="chip">
+                            {{ tech }}
+                        </span>
+                    </div>
+                </div>
+
+                <div class="project-image">
+                    <img src="/electronic commerce.jpg" alt="E-commerce project">   
+                </div>
+            </div>
+            
+
+        </mat-tab>
+
+        <mat-tab label="Clarus Subsea Integration">
+
+            <div class="project-wrapper reverse">
+
+                <div class="project-content">
+                    <h2> {{ projects[1].title}} </h2>
+
+                    <p><strong>{{  projects[1].role }}</strong> @ {{  projects[1].company }}</p>
+                    <p>{{  projects[1].duration }}</p>
+    
+                    <p>{{  projects[1].description }}</p>
+    
+                    <h3>Key Contributions</h3>
+                    <ul>
+                        <li *ngFor="let item of  projects[1].contributions">
+                            {{ item }}
+                        </li>
+                    </ul>
+    
+                    <h3>Tech Stack</h3>
+                    <div>
+                        <span *ngFor="let tech of  projects[1].tech" class="chip">
+                            {{ tech }}
+                        </span>
+                    </div>
+                </div>
+
+                <div class="project-image">
+                    <img src="/subsea clarus.jpg" alt="subsea project" >
+                </div>
+
+            </div>
+
+            
+        </mat-tab>
+    </mat-tab-group>
+
+</section>

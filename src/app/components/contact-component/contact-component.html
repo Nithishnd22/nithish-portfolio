@@ -1,1 +1,52 @@
-<p>contact-component works!</p>
+<section id="contact-section">
+
+    <!-- <h2 class="section-title">Contact Me</h2> -->
+
+    <div class="contact-container">
+
+        <div class="contact-form">
+            <h2>Reach Me </h2>
+            <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+                <div>
+                    <label class="form-label">Name</label>
+                    <input type="text" class="form-control" placeholder="Enter Your Full Name" formControlName="Name">
+                </div>
+
+                <div>
+                    <label class="form-label">Email</label>
+                    <input type="text" class="form-control" placeholder="Enter Your Gmail" formControlName="Email">
+                </div>
+
+                <div>
+                    <label class="form-label">Your Message</label>
+                    <textarea class="form-control" placeholder="Enter Your Message" formControlName="Message" rows="3">
+                    </textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+        </div>
+
+        <div class="contact-info">
+
+            <div class="profile-image">
+                <img src="/Nithish2.JPEG" alt="profile">
+            </div>
+
+            <h2>Get in Touch</h2>
+            
+            <p>Name: <strong>Nithish Kumar</strong></p>
+            <p>Email: <strong>nithishnd22@gmail.com</strong></p>
+            <p>Contac: <strong>+91 7871527927</strong></p>
+            <p>Location: <strong>Madurai</strong></p>
+            <p>
+                <a href="https://www.linkedin.com/in/nithish-kumar-a733a9232/" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="devicon-linkedin-plain"></i>
+                </a>
+            </p>
+            
+        </div>
+
+    </div>
+</section>
