@@ -1,7 +1,8 @@
 <div>
     <mat-toolbar class="navbar" color="primary">
         <div class="logo">
-            <span style="margin-left: 30px;">NITHISH KUMAR</span>
+            <div class="logo-circle">NK</div>
+            <span style="margin-left: 10px;">NITHISH KUMAR</span>
         </div>
         <span class="spacer"></span>
         <div class="nav-links">
@@ -12,7 +13,9 @@
             <a mat-button (click)="scrollToSection('contact')" [class.active]="activeSection==='contact'" >Contact</a>
         </div>
 
-        <button mat-raised-button class="cv-btn">Download CV</button>
+        <button mat-raised-button class="cv-btn" (click)="downloadCV()">
+            Download CV
+        </button>
     </mat-toolbar>
 </div>
 

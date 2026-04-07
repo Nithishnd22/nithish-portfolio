@@ -41,8 +41,7 @@ mat-toolbar {
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
 }
 
@@ -93,8 +92,12 @@ mat-toolbar {
   color: white;
   border-radius: 6px;
   padding: 8px 18px;
+  font-weight: 500;
 }
 
+.cv-btn:hover {
+  cursor: pointer;
+}
 
 /* about */
 
@@ -146,4 +149,8 @@ mat-toolbar {
   background: #7b2ff7;
   color: white;
   border-radius: 6px;
+}
+
+.cv-resume:hover {
+  cursor: pointer;
 }

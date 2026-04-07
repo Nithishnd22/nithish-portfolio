@@ -56,4 +56,13 @@ export class HomeComponent {
     }
   }
 
+  downloadCV(): void {
+    const filtePath = '/Nithish_Kumar_CV.pdf';
+
+    const link = document.createElement('a');
+    link.href = filtePath;
+    link.download = 'Nithish_Kumar_CV.pdf',
+    link.click();
+  }
+
 }
