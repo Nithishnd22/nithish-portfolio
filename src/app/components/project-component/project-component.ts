@@ -35,9 +35,9 @@ export class ProjectComponent {
       company: 'Bizmetric India Pvt Ltd.',
       role: 'Full Stack Developer',
       duration: 'Aug 2025 - Feb 2026',
-      description: 'Enterprise SaaS platform for subsea asset integrity management, supporting complex workflows, automation, and large-scale data processing.',
+      description: 'Enterprise customer platform for subsea asset integrity management, supporting complex workflows, automation, and large-scale data processing.',
       contributions: [
-        'Developed full stack features using Angular and Node.js for enterprise SaaS platform',
+        'Developed full stack features using Angular and Node.js For customer-facing enterprise asset integrity platform supporting subsea operations',
         'Built bulk upload module with Excel processing, validation, normalization, and relational mapping',
         'Implemented advanced data tables with filtering, pagination, full-screen view, and dynamic columns',
         'Designed and integrated email notification workflows for system and user events',
