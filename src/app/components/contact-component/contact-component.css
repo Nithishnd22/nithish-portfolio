@@ -151,3 +151,15 @@
     flex-direction: column;
   }
 }
+
+.success {
+    text-align: center;
+    margin: 12px auto 0;
+    padding: 12px;
+    border-radius: 5px;
+    width: 400px;
+    background-color: #e6f4ea;
+    color: #2e7d32;
+    font-size: 14px;
+    font-weight: 500;
+}

@@ -1,6 +1,12 @@
 <section id="contact-section">
 
     <!-- <h2 class="section-title">Contact Me</h2> -->
+     
+    @if(successMessage && successMessage.length) {
+        <p class="success">
+            {{ successMessage }}
+        </p>
+    }
 
     <div class="contact-container">
 
